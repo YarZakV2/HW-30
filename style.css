@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: moveSquare 4s infinite linear;
+}
+
+@keyframes moveSquare {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  25% {
+    top: 300px;
+    left: 0;
+    background-color: blue;
+  }
+  50% {
+    top: 300px;
+    left: 300px;
+    background-color: green;
+  }
+  75% {
+    top: 0;
+    left: 300px;
+    background-color: yellow;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+}
